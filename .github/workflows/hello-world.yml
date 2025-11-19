@@ -1,0 +1,22 @@
+name: Hello World Workflow
+
+# Define the event that triggers the workflow (e.g., push or pull request)
+on:
+  push:
+    branches:
+      - main  # or master, depending on your branch
+  workflow_dispatch:  # Allows you to manually trigger the workflow from GitHub UI
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest  # This specifies the environment the workflow runs on (latest version of Ubuntu)
+
+    steps:
+    # Checkout the code from your repository
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    # Run a simple script that prints "hello-world"
+    - name: Print hello world
+      run: |
+        echo "hello-world"
