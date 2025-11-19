@@ -25,7 +25,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt  # Ensure you have a requirements.txt file in your repo
+        pip install -r /home/noa/Downloads/FlaskTodo2new/FlaskTodo2/requirements.txt  # Ensure you have a requirements.txt file in your repo
 
     # Run testserver.py (located inside FlaskTodo2 folder)
     - name: Run testserver.py
