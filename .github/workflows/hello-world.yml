@@ -4,7 +4,7 @@ name: Hello World Workflow
 on:
   push:
     branches:
-      - main  # or master, depending on your branch
+      - master  # or master, depending on your branch
   workflow_dispatch:  # Allows you to manually trigger the workflow from GitHub UI
 
 jobs:
